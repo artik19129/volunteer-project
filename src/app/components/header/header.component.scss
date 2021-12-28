@@ -1,0 +1,37 @@
+:host {
+  header {
+    padding: 15px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 130px;
+    }
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+      background-color: #e32727;
+      padding: 10px 15px;
+      border-radius: 6px;
+      gap: 5px;
+      cursor: pointer;
+
+      &::before {
+        position: relative;
+        content: '';
+        width: 17px;
+        height: 16px;
+        background-image: url('/assets/icons/user.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
