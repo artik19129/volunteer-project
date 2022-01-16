@@ -6,8 +6,9 @@
     align-items: center;
     justify-content: space-between;
 
-    img {
-      width: 130px;
+    .logo {
+      width: 200px;
+      cursor: pointer;
     }
 
     button {
@@ -21,6 +22,8 @@
       border-radius: 6px;
       gap: 5px;
       cursor: pointer;
+      color: #fff;
+      font-weight: 600;
 
       &::before {
         position: relative;

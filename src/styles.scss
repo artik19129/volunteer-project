@@ -1,12 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
 }
 
 * {
-  color: #fff;
+  color: #000;
   font-weight: 400;
   font-size: 16px;
+  font-family: Comfortaa, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;             /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: transparent;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #6563ff;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: none;  /* padding вокруг плашки */
 }
 
 h1,
@@ -15,13 +31,22 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  display: block;
+  color: unset;
+  margin: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  font-size: unset;
+  font-weight: unset;
+  line-height: unset;
 }
 
 .fixed-size {
   width: 100%;
   padding: 0 20px;
-  max-width: 1170px;
+  max-width: 1366px;
   box-sizing: border-box;
   margin: 0 auto;
 }

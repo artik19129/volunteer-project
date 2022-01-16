@@ -1,0 +1,41 @@
+:host {
+  .footer-section {
+    width: 100%;
+    background: #EFF5F9;
+
+    .footer-section__container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32px;
+      padding: 35px 0;
+
+      .footer-section__container-column {
+        .column-title {
+          font-size: 22px;
+          margin-bottom: 32px;
+          font-weight: 700;
+          font-style: normal;
+          color: #0b1f33;
+          line-height: 24px;
+          font-family: Roboto, sans-serif;
+
+          span {
+            font-size: 19px;
+            font-weight: 700;
+            font-style: italic;
+          }
+        }
+
+        .column-item {
+          font-size: 18px;
+          color: #66727f;
+          line-height: 30px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
