@@ -35,6 +35,36 @@
           cursor: pointer;
           font-weight: bold;
         }
+
+        .socials-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .social {
+            width: 40px;
+            height: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &.vk {
+              background-image: url('/assets/images/icons/vk.svg');
+            }
+
+            &.tg {
+              background-image: url('/assets/images/icons/telegram.svg');
+            }
+
+            &.yt {
+              background-image: url('/assets/images/icons/youtube.svg');
+            }
+
+            &.fb {
+              background-image: url('/assets/images/icons/facebook.svg');
+            }
+          }
+        }
       }
     }
   }

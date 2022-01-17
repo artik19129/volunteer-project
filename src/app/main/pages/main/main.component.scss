@@ -45,6 +45,7 @@
         justify-content: center;
         width: 100%;
         margin-top: 50px;
+        margin-bottom: 60px;
 
 
         .search {
@@ -71,6 +72,21 @@
             border-bottom: 2px solid #fff;
             opacity: 1;
           }
+        }
+      }
+
+      .slog-container {
+        display: flex;
+        justify-content: center;
+
+        h3 {
+          text-align: center;
+          max-width: 500px;
+          color: #fff;
+          font-family: Roboto, sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 30px;
         }
       }
     }
