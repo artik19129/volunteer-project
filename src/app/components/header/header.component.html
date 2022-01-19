@@ -4,7 +4,11 @@
       <a href="/">
         <img class="logo" src="/assets/images/logo-min.png">
       </a>
-      <button>Авторизация</button>
+      <div class="auth-side" *ngIf="_service.isAuth">
+        <button>Связаться с помощником</button>
+        <h3>Валеев Артём Р.</h3>
+      </div>
+      <button *ngIf="!_service.isAuth">Авторизация</button>
     </header>
   </div>
 </div>

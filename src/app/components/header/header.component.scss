@@ -36,5 +36,19 @@
         background-size: contain;
       }
     }
+
+    .auth-side {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      button {
+        background-color: #3abfb4;
+
+        &::before {
+          background-image: url('/assets/icons/user.svg');
+        }
+      }
+    }
   }
 }
