@@ -1,3 +1,15 @@
+@keyframes pulse {
+  0% {
+   transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 :host {
   .main-container {
     .top-container {
@@ -133,6 +145,15 @@
             text-align: center;
           }
         }
+
+        .center-icon {
+          animation: pulse 2s infinite;
+          max-width: 220px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
 
@@ -154,7 +175,7 @@
 
         &.left {
           .step-container__background {
-            background: linear-gradient(90deg,#6563ff,#6563ff 20%,#eb3e2e00 70%);
+            background: linear-gradient(90deg,#6563ff,#6563ff 0%,#eb3e2e00 100%);
           }
 
           .step-container__content {
@@ -164,7 +185,7 @@
 
         &.right {
           .step-container__background {
-            background: linear-gradient(90deg,#4b74b900 20%,#6563ff 63%,#6563ff);
+            background: linear-gradient(90deg,#4b74b900 0%,#6563ff 63%,#6563ff);
           }
 
           .step-container__content {
@@ -227,6 +248,7 @@
         }
       }
     }
+
     .partnership-container {
       display: flex;
       flex-direction: column;
@@ -282,7 +304,84 @@
             outline: none;
             background-color: #6563ff;
             color: #fff;
-            cursor: pointer;
+            transition: .4s ease;
+
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+
+    .accessible-city-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 80px;
+
+      .accessible-city-container {
+        margin-top: 20px;
+        position: relative;
+        height: 300px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+        background-position: 0 0;
+        background-size: cover;
+        background-position-y: 55%;
+
+        .accessible-city__background {
+          background: linear-gradient(90deg,#4b74b900 -10%,#6563ff 54%,#6563ff);
+        }
+
+        .accessible-city__content {
+          margin-left: 50%;
+        }
+
+        .accessible-city__background {
+          height: 100%;
+          width: 100%;
+          border-radius: 6px;
+
+          .accessible-city__content {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .accessible-city__content-title {
+              font-family: Roboto, sans-serif;
+              color: #fff;
+              font-weight: 900;
+              font-size: 54px;
+            }
+
+            .accessible-city__content-subtitle {
+              font-family: Roboto, sans-serif;
+              color: #fff;
+              font-weight: 900;
+              font-size: 30px;
+              margin-bottom: 24px;
+            }
+
+            .accessible-city__content-button {
+              max-width: 300px;
+              min-height: 50px;
+              border: 2px solid #fff;
+              color: #fff;
+              font-weight: 900;
+              font-size: 23px;
+              background-color: transparent;
+              transition: .4s ease;
+
+              &:hover {
+                background-color: #fff;
+                color: #000000;
+                cursor: pointer;
+              }
+            }
           }
         }
       }
