@@ -1,0 +1,18 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Build
+      - run: npm ci
+      - run: npm run build
+      # Deploy
+      - run: cd dist/project && rsync -e "ssh {{ secrets.host }}" && echo "{{ secrets.password }}"
+      - run: echo "cd workar6g.beget.tech"

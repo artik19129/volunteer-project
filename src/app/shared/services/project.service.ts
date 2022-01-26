@@ -7,6 +7,6 @@ export class ProjectService {
   public isAuth = false;
 
   constructor() {
-    this.isAuth = true;
+    this.isAuth = false;
   }
 }

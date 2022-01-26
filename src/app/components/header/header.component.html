@@ -1,18 +1,16 @@
 <div class="container" style="background-color: #fff; width: 100%; z-index: 999;">
   <div class="help-line">
-    <h4>Версия для слабовидящих</h4>
-    <h4>Версия для глухонемых</h4>
+    <h4 (click)="onClickIsDEV()">Версия для слабовидящих</h4>
+    <h4 (click)="onClickIsDEV()">Версия для глухонемых</h4>
   </div>
   <div class="fixed-size">
     <header>
-      <a href="/">
-        <img class="logo" src="/assets/images/logo-min.png">
-      </a>
+      <img class="logo" src="/assets/images/logo-min.png" (click)="router.navigate(['/'])">
       <div class="auth-side" *ngIf="_service.isAuth">
-        <button>Связаться с помощником</button>
+        <button (click)="onClickIsDEV()">Связаться с помощником</button>
         <h3>Валеев Артём Р.</h3>
       </div>
-      <button *ngIf="!_service.isAuth">Авторизация</button>
+      <button *ngIf="!_service.isAuth" (click)="onClickIsDEV()">Авторизация</button>
     </header>
   </div>
 </div>

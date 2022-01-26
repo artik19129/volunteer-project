@@ -1148,6 +1148,20 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@ngneat/hot-toast@3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@ngneat/hot-toast/-/hot-toast-3.4.3.tgz#4f1cdcc5abb138718697476ce757ec0417a62ea0"
+  integrity sha512-VZjk+bGqEpKTi1R0gPuYTDeezVLjqH1g1Ks2EQ3E9UeTVg1lx1RGG0oX1P8uPj/rMBmxPOeE73SUyQNOfcVimw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngneat/overview@^2.0.2":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@ngneat/overview/-/overview-2.1.0.tgz#db256e2f0f77ad6d4a774df583f5698af0ab9f64"
+  integrity sha512-v05lg7P/7PrVHjelZCEJUZ08idaC51a8rjlvUk5BrSnxlw97DijLViOaMgqosMFDI1Qpfbp/7sjP0rpA+CBKLQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@11.2.16":
   version "11.2.16"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-11.2.16.tgz#84d97a5894167ab2c7c972f84586387471603726"

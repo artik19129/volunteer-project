@@ -2,39 +2,39 @@
   <div class="top-container">
     <div class="fixed-size">
       <div class="services-container">
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/hobbi.svg" width="32" height="32" alt="Хобби">
           <h1>Хобби</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/store.svg" width="32" height="32" alt="Магазин">
           <h1>Магазин</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/repair.svg" width="32" height="32" alt="Мастер">
           <h1>Мастер</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/car.svg" width="32" height="32" alt="Такси">
           <h1>Такси</h1>
         </div>
-        <div class="service">
+        <div class="service"(click)="onClickIsDEV()">
           <img src="/assets/icons/cleaning.svg" width="32" height="32" alt="Уборка">
           <h1>Уборка</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/screw.svg" width="32" height="32" alt="Ремонт">
           <h1>Ремонт</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/medical.svg" width="32" height="32" alt="Здоровье">
           <h1>Здоровье</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/tennis.svg" width="32" height="32" alt="Спорт">
           <h1>Спорт</h1>
         </div>
-        <div class="service">
+        <div class="service" (click)="onClickIsDEV()">
           <img src="/assets/icons/book-reader.svg" width="32" height="32" alt="Психолог">
           <h1>Психолог</h1>
         </div>
@@ -56,7 +56,7 @@
           <h2>Для кого?</h2>
           <p>Для социально незащищенные групп населения и граждан старше 65 лет</p>
         </div>
-        <img class="center-icon" src="/assets/images/pages/main/hearts.png"/>
+        <img class="center-icon" src="/assets/images/pages/main/hearts.png" (click)="onClickIsDEV()"/>
         <div class="info-container">
           <img src="/assets/icons/team.png" alt="question-circle">
           <h2>Кто помогает?</h2>
@@ -108,17 +108,17 @@
         <div class="section">
           <h1 class="section-title">Вы компания?</h1>
           <h3 class="section-item">У Вас компания по предоставлению услуг - Вы можете быть полезным</h3>
-          <button>Зарегистрироваться</button>
+          <button (click)="router.navigate(['/partnership/company'])">Зарегистрироваться</button>
         </div>
         <div class="section">
           <h1 class="section-title">Вы волонтёр?</h1>
           <h3 class="section-item">Вы хотите быть полезным - тогда Вам к нам!</h3>
-          <button>Пройти обучение</button>
+          <button (click)="router.navigate(['/partnership/volunteer'])">Пройти обучение</button>
         </div>
         <div class="section">
           <h1 class="section-title">Вы Соц.Работник?</h1>
           <h3 class="section-item">Для Вас мы открываем новые горизонты!</h3>
-          <button>Отправить резюме</button>
+          <button (click)="router.navigate(['/partnership/worker'])">Отправить резюме</button>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@
           <div class="accessible-city__content">
             <h1 class="accessible-city__content-title">Доступный город</h1>
             <h2 class="accessible-city__content-subtitle">Строим вместе</h2>
-            <button class="accessible-city__content-button">Предложение</button>
+            <button class="accessible-city__content-button" (click)="onClickIsDEV()">Предложение</button>
           </div>
         </div>
       </div>
