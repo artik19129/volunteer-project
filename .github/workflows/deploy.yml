@@ -14,5 +14,5 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy {{ secrets.host }} {{ secrets.password }}
-      # - run: cd dist/project && rsync --rsh='sshpass -p ${{ secrets.PASSWORD }} ssh -l workar6g -p 22' . ${{ secrets.HOST }}:/workar6g.beget.tech/public_html
-      - run: cd dist/project && sshpass -p "${{ secrets.PASSWORD }}" rsync -ae "ssh -p 22" /local_dir  ${{ secrets.HOST }}:/workar6g.beget.tech/public_html
+      - run: cd dist/project && rsync --rsh='sshpass -p ${{ secrets.PASSWORD }} ssh -l workar6g -p 22 -o StrictHostKeyChecking=no' . ${{ secrets.HOST }}:/workar6g.beget.tech/public_html
+      # - run: cd dist/project && sshpass -p "${{ secrets.PASSWORD }}" rsync -ae "ssh -p 22" /local_dir  ${{ secrets.HOST }}:/workar6g.beget.tech/public_html
