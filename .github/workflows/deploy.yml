@@ -13,6 +13,6 @@ jobs:
       # Build
       - run: npm ci
       - run: npm run build
-      # Deploy
-      - run: cd dist/project && rsync -e "ssh {{ secrets.host }} && echo {{ secrets.password }}" --archive --compress --delete . {{ secrets.host }}:/workar6g.beget.tech/public_html"
+      # Deploy {{ secrets.host }} {{ secrets.password }}
+      - run: cd dist/project && rsync -avzhe ssh . {{ secrets.host }}:/workar6g.beget.tech/public_html
 
