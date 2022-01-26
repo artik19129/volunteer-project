@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Build
-      - run: npm ci
-      - run: npm run build
+      - run: yarn ci
+      - run: yarn build
       # Deploy
       - run: cd dist/project && rsync -e "ssh {{ secrets.host }}" && echo "{{ secrets.password }}"
       - run: echo "cd workar6g.beget.tech"
