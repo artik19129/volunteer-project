@@ -5,6 +5,7 @@ import {Injectable} from '@angular/core';
 })
 export class ProjectService {
   public isAuth = false;
+  public isModalOpen = false;
 
   constructor() {
     this.isAuth = false;
