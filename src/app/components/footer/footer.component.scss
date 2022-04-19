@@ -34,6 +34,11 @@
           line-height: 30px;
           cursor: pointer;
           font-weight: bold;
+          transition: color .3s ease;
+
+          &:hover {
+            color: #479bf5;
+          }
         }
 
         .socials-container {

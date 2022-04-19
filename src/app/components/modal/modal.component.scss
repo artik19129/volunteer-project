@@ -1,6 +1,6 @@
 :host {
   .modal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-width: 100vw;
@@ -10,6 +10,21 @@
     overflow: hidden;
     backdrop-filter: blur(10px);
     z-index: 99999999;
+
+    .cross {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-flex;
+      justify-content: flex-end;
+      padding: 20px;
+      z-index: 5;
+
+      img {
+        width: 28px;
+        cursor: pointer;
+      }
+    }
 
     .container {
       display: flex;

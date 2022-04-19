@@ -5,9 +5,9 @@ export const showTrigger = trigger('onShow', [
     style({
       opacity: 0
     }),
-    animate(350)
+    animate(200)
   ]),
   transition(':leave', [
-    animate('350ms ease-in', style({ opacity: 0 })),
+    animate('200ms ease-in', style({ opacity: 0 })),
   ])
-])
+]);

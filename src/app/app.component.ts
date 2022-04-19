@@ -9,6 +9,7 @@ import { showTrigger } from './shared/animations/fade.animation';
   animations: [showTrigger]
 })
 export class AppComponent {
+  // tslint:disable-next-line:variable-name
   constructor(public _service: ProjectService) {
   }
 }

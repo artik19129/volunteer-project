@@ -14,4 +14,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy {{ secrets.host }} {{ secrets.password }}
-      - run: cd dist/project && rsync --rsh='sshpass -p ${{ secrets.PASSWORD }} ssh -l ${{ secrets.LOGIN }} -p 22 -o StrictHostKeyChecking=no' --archive --compress --delete . ${{ secrets.HOST }}:~/domains/xn----ctb1badgeej8l.xn--p1ai/public_html
+      - run: cd dist/project && rsync --rsh='sshpass -p ${{ secrets.PASSWORD }} ssh -l ${{ secrets.LOGIN }} -p 22 -o StrictHostKeyChecking=no' --archive --compress --delete . ${{ secrets.HOST }}:/home/admin/web/всё-просто.рф/public_html

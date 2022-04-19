@@ -11,6 +11,7 @@ import { DOCUMENT } from '@angular/common';
 })
 export class MainComponent implements OnInit {
 
+  // tslint:disable-next-line:variable-name
   constructor(private toast: HotToastService, public readonly router: Router, public _service: ProjectService, @Inject(DOCUMENT) private document: Document) {
   }
 

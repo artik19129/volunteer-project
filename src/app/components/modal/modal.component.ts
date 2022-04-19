@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { showTrigger } from '../../shared/animations/fade.animation';
+import { ProjectService } from '../../shared/services/project.service';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-modal',
@@ -9,9 +11,16 @@ import { showTrigger } from '../../shared/animations/fade.animation';
 })
 export class ModalComponent implements OnInit {
 
-  constructor() { }
+  // tslint:disable-next-line:variable-name
+  constructor(public _service: ProjectService, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
+  }
+
+
+  public close(): void {
+    this._service.isModalOpen = false;
+    this.document.body.style.overflow = 'auto';
   }
 
 }
